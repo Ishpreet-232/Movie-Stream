@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap");
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Source Serif Pro", serif;
+  background-color: hsl(240, 28%, 14%);
+  
+}
+
+.menu-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+  z-index: 999;
+}
+
+.menu-toggle:focus,
+.menu-toggle:hover {
+  color: #fff;
+}
+
+.menu-toggle:hover {
+  background: #343a40;
+}
+
+/* ************************ */
+#sidebar-wrapper {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  transition: all 0.4s ease 0s;
+  transform: translateX(250px);
+  background: #1a1a2e;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li.sidebar-nav-item a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+}
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  font-size: 1.2rem;
+  background: rgba(52, 58, 64, 0.1);
+  height: 80px;
+  line-height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+.sidebar-nav > .sidebar-brand a {
+  color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+/* ***************** */
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-image:
+    url("widow.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000000;
+}
+.masthead h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+  color: #2a2828;
+}
+
+.masthead .mb-5 em {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+  text-transform: uppercase;
+  background-color: #d35d6e;
+  border: none;
+  color: #fff;
+}
+
+.btn-xl:hover {
+  background-color: #fd3a69;
+  color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+/* ******************* */
+.Container {
+  margin: 2% 2% 0 3%;
+}
+.Movies img {
+  margin-right: 1%;
+  margin-bottom: 10%;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: -4px 4px 5px 0 #000;
+  transition: 0.8s;
+}
+
+.Movies img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.Container h2 {
+  margin-bottom: 2%;
+  color: #f3e6e3;
+}
+
+/* *********** */
+#footer {
+  background-color: #020314;
+  padding: 2% 15%;
+  color: #fff;
+  text-align: center;
+}
+
+.social-icon {
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  color: cadetblue;
+}
+
+.footername {
+  color: coral;
+}
+.footername:hover {
+  text-decoration: none;
+  color: crimson;
+}
+
+/* ************ */
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 45px;
+  display: none;
+}
+
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+  color: whitesmoke;
+}
+.scroll-to-top:hover {
+  background: #343a40;
+}
+.scroll-to-top i {
+  font-weight: 800;
+}
+/* ******grfghfdbg */
+.search-bar{
+  background: black;
+  margin-right: 1em;
+  padding: .5em 1em;
+  border-radius: 50px;
+  width: 40%;
+  min-width: 100px;
+  text-decoration: none;
+
+}
+.upar{
+  background-color: transparent;
+  display: fixed;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+.na{
+    
+  display: flex;
+  justify-content:space-around;
+  list-style-type:none;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.na {
+list-style: none;
+padding: 0;
+color: #fff;
+text-decoration: none;
+}
+
+.la {
+text-decoration: none;
+color:white;
+margin-right: 40px;
+}
+.reg{
+background-color: rgb(50, 50, 50);
+border-radius: 40px;
+height: 40px;
+width:70px;
+align-content: center;
+padding-left: 13px;
+text-decoration: none;
+}
+.jj{
+  background-color:transparent;
+  border: none;
+}
+.nn{
+  background-color: rgb(32, 28, 28);
+  text-decoration: none;
+}
+
+.stations{
+      margin-top:2em;
+      padding:1em;
+      background:#1d1b1b;
+      border-radius: 10px;
+  }
+  
+  .stations-entry{
+      position: relative;
+      width: 13.5%;
+  }
+  
+  .stations-entry img{
+      border-radius: 50%;
+  }
+  
+  .stations-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.73rem;
+  }
+  
+  .mid-featured-font{
+      font-weight: 700;
+      font-size: 1rem;
+  }
+  
+  .article-image{
+      position: relative;
+      padding: 30px;
+  }
+  
+  .middle-featured{
+      margin-top:2em;
+  }
+  .genre{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .g1{
+    width: 150px;
+  height: 150px;
+  border-radius: 50% 50% 50% 50%;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0OCbYSOBNWpDgI2_AJAkNHWOwtFCAdsR62Q&s);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  }
+  .g2{
+    width: 150px;
+  height: 150px;
+  border-radius: 50% 50% 50% 50%;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9DK-UlzL_Mpoi_09RWlD_mCbqLDQZI72_kA&s');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  }
+  .g3{
+    width: 150px;
+  height: 150px;
+  border-radius: 50% 50% 50% 50%;
+  background-image: url('https://musicart.xboxlive.com/7/a1de3e00-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  }
+  .g4{
+    width: 150px;
+  height: 150px;
+  border-radius: 50% 50% 50% 50%;
+  background-image: url('https://cdn.moviefone.com/admin-uploads/posters/afterwefell-movie-poster_1657920259.jpg?d=360x540&q=80');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  }
+  .g5{
+    width: 150px;
+  height: 150px;
+  border-radius: 50% 50% 50% 50%;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0uVX6leLjFXjzl7PNtYgpEQ-Kbun8VWV9Zg&s);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  }
+  .g6{
+    width: 150px;
+  height: 150px;
+  border-radius: 50% 50% 50% 50%;
+  background-image: url(https://wwwimage-us.pplusstatic.com/thumbnails/photos/w370-q80/movie_asset/82/90/88/ootb_salone_poster_1400x2100.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  }
+  .g7{
+    width: 150px;
+  height: 150px;
+  border-radius: 50% 50% 50% 50%;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9k24lJdbN4yv8Hb_j0a7Gsfbs3q-MJ6Uo5yG6gjtNA4J12NyaTW-1LCpqOyD8obPr6FmRw');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  }
